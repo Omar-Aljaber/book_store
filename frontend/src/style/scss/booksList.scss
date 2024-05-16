@@ -1,0 +1,200 @@
+@import "_color.scss";
+@import "_size.scss";
+@import "_font.scss";
+
+.books-section {
+    display: flex;
+    // justify-content: space-between;
+    flex-wrap: wrap;
+    // height: 100vh;
+    width: 80vw;
+    .books {
+        width: 15vw;
+        height: 365px;
+        text-align: center;
+        background-color: $WhiteSmoke;
+        margin: 7px 4px;
+        border-left: 7px solid $white;
+        .bookPhoto {
+            margin: 25px 0 0;
+        }
+        .book-title {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 5px 0;
+        }
+        .review {
+            div {
+                position: relative;
+                display: inline;
+                bottom: 2px;
+                font-size: 15px;
+                margin: 0 5px;
+            }
+        }
+        .price {
+            font-size: 20px;
+            font-weight: 700;
+            margin: 5px 0 15px 0;
+            color: $green;
+        }
+        .onHoverPart {
+            position: absolute;
+            height: 365px;
+            width: 15.1vw;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.61);
+            img {
+                position: relative;
+                top: 150px;
+                margin: 5px;
+                padding: 5px;
+                background-color: $silver;
+                border-radius: 3px;
+            }
+            img:hover {
+                background-color: $WhiteSmoke;
+            }
+        }
+    }
+    .see-all {
+        position: relative;
+        margin: 30px auto;
+        padding: 5px 10px;
+        width: 250px;
+        height: 50px;
+        font-size: 25px;
+        border-radius: 30px;
+        font-family: $signika;
+        cursor: pointer;
+        color: $royalblue;
+        background: $white;
+        border: solid 2px $royalblue;
+    }
+    .see-all:hover{
+        background: $blue;
+        color: $white;
+    }
+    .read-book {
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 110;
+        background-color: rgba(0, 0, 0, 0.03);
+    }
+    .read-book > .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 600px;
+        width: 1100px;
+        border-radius: 10px;
+        background-color: $white;
+        .upper-part {
+            width: 1050px;
+            margin: 40px 0 0 30px;
+            img {
+                width: 250px;
+                float: left;
+                margin-right: 40px;
+            }
+            .about-book {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                // align-items: start;
+                height: 400px;
+                font-family: $signika;
+                div {
+                    margin: 15px 0;
+                }
+                .title {
+                    font-size: 35px;
+                }
+                .author {
+                    font-size: 25px;
+                }
+                .description {
+                    text-align: start;
+                    font-size: 20px;
+                    overflow-y: scroll;
+                }
+            }
+        }
+        .down-part {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 200px;
+            margin: 0 30px;
+            .price {
+                font-size: 25px;
+                font-weight: 600;
+                color: $green;
+            }
+            .review {
+                div {
+                    position: relative;
+                    display: inline;
+                    bottom: 2px;
+                    font-size: 20px;
+                    margin: 0 10px;
+                }
+            }
+            .count {
+                display: flex;
+                align-items: center;
+                font-weight: 700;
+                .number {
+                    display: inline-block;
+                    width: 60px;
+                    height: 25px;
+                    margin: 0 10px;
+                    border-radius: 20px;
+                    border: 2px solid black;
+                }
+                .plus, .minus {
+                    width: 30px;
+                    height: 25px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    color: $gray;
+                    border: 2px solid $gray;
+                }
+                .minus:hover {
+                    color: $black;
+                    border: 2px solid $black;
+                }
+                .plus:hover {
+                    color: $black;
+                    border: 2px solid $black;
+                }
+            }
+            .button {
+                height: 40px;
+                width: 200px;
+                margin: 10px;
+                font-size: 17px;
+                cursor: pointer;
+                color: $white;
+                border-radius: 30px;
+                outline: none;
+                border: solid 2px $royalblue;
+                background-color: $royalblue;
+            }
+            button:first-child {
+                background-color: $white;
+                color: $royalblue;
+            }
+            button:hover {
+                background-color: $navy;
+                color: $white;
+            }
+        }
+    }
+}

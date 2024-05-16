@@ -1,0 +1,31 @@
+@import "_color.scss";
+@import "_size.scss";
+@import "_font.scss";
+
+footer {
+    position: relative;
+    display: flex;
+    text-align: center;
+    // top: 3850px;
+    height: 350px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $WhiteSmoke;
+    div {
+        width: 50%;
+        margin-top: 20px;
+    }
+    .social-media {
+        img {
+            margin: 15px;
+            cursor: pointer;
+        }
+    }
+    .all-rights {
+        width: 100%;
+        border-top: 1px solid $silver;
+        padding-top: 10px;
+    }
+}

@@ -1,0 +1,383 @@
+{
+    "books": [
+        {
+            "photo": null,
+            "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
+            "author": "author name",
+            "publisher": "publisher",
+            "category": "History",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "price": 35,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Tales of the Heart",
+            "publisher": "publisher",
+            "category": "Religion",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 5,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Heartfelt Roses",
+            "publisher": "publisher",
+            "category": "Story",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 25,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Affinity Romance",
+            "publisher": "romance",
+            "category": "History",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 18,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Keep your setting in mind",
+            "publisher": "publisher",
+            "category": "Classic",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 19,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Don't forget the subtitle",
+            "publisher": "publisher",
+            "category": "Fantasy",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 35,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "East of Eden by John Steinbeck",
+            "publisher": "publisher",
+            "category": "Children",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 55,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },{
+            "photo": null,
+            "title": "The House of Mirth",
+            "publisher": "publisher",
+            "category": "Political",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 22,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "The Devil Wears Prada",
+            "publisher": "publisher",
+            "category": "Political",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 36,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "The Man Who Was Thursday",
+            "publisher": "publisher",
+            "category": "History",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 8,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "The Devil Wears Prada",
+            "publisher": "publisher",
+            "category": "Religion",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 9,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "I Know Why The Caged Bird",
+            "publisher": "publisher",
+            "category": "Children",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 11,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "The Sun Also Rises by Ernest Hemingway",
+            "publisher": "publisher",
+            "category": "Cooking",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 14,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
+            "publisher": "publisher",
+            "category": "Cooking",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 31,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
+            "publisher": "publisher",
+            "category": "Cooking",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 29,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
+            "author": "author name",
+            "publisher": "publisher",
+            "category": "Arts",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "price": 35,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Tales of the Heart",
+            "publisher": "publisher",
+            "category": "Sport",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 5,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Heartfelt Roses",
+            "publisher": "publisher",
+            "category": "Sport",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 25,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Affinity Romance",
+            "publisher": "publisher",
+            "category": "Sport",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 18,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "photo": null,
+            "title": "Keep your setting in mind",
+            "publisher": "publisher",
+            "category": "Sport",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": 225,
+            "view": 25,
+            "description": {
+                "author": "author name",
+                "price": 19,
+                "new_price": "",
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        }
+    ]
+}

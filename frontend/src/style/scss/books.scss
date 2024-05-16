@@ -1,0 +1,36 @@
+@import "_color.scss";
+@import "_size.scss";
+@import "_font.scss";
+
+.books-view {
+    position: relative;
+    display: flex;
+    top: 130px;
+    // height: 500vh;
+    .left-side {
+        height: auto;
+        width: 18vw;
+    }
+    .by-with {
+        margin: 25px 0 10px 25px;
+        font-family: $signika;
+        font-size: 25px;
+    }
+    .category, .publisher {
+        display: block;
+        margin: 0 0 10px 50px;
+        font-size: 20px;
+        text-align: start;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .category:hover, .publisher:hover {
+        color: $blue;
+    }
+}
+.under-part {
+    position: relative;
+    top: 150px;
+}
+

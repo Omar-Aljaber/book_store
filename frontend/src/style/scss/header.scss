@@ -1,0 +1,137 @@
+@import "_color.scss";
+@import "_size.scss";
+@import "_font.scss";
+
+.header {
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    main {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        text-align: center;
+        background-color: #fff;
+        .logo {
+            // margin: 1.5vh;
+        }
+        form {
+            // margin: 3vh;
+            input {
+                width: 450px;
+                padding: 2px 5px;
+                font-family: $signika;
+                font-size: 20px;
+                border-radius: 8px;
+                border: 2px solid $royalblue;
+                outline: none;
+            }
+            input::placeholder{
+                font-size: 18px;
+                color: $silver;
+            }
+            button {
+                width: 80px;
+                margin: 0 5px;
+                font-family: $signika;
+                font-size: 20px;
+                border-radius: 8px;
+                border: solid 2px $royalblue;
+                color: $royalblue;
+                background: $white;
+                cursor: pointer;
+            }
+            button:hover {
+                background: $royalblue;
+                color: $white;
+            }
+        }
+        aside {
+            display: flex;
+            .cart {
+                margin-right:4vh;
+                cursor: pointer;
+            }
+            .favorite {
+                margin-right:4vh;
+                cursor: pointer;
+            }
+            .user {
+                margin-right:4vh;
+                cursor: pointer;
+            }
+            .whatsapp {
+                cursor: pointer;
+            }
+        }
+    }
+    .login {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        z-index: 110;
+        background-color: rgba(0, 0, 0, 0.61);
+        form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            width: 500px;
+            border-radius: 10px;
+            background-color: $white;
+        }
+        .title{
+            position: relative;
+            bottom: 30px;
+            font-size: 35px;
+            font-weight: 500;
+            color: $navy;
+        }
+        input {
+            width: 350px;
+            margin: 8px;
+            height: 25px;
+            font-size: 17px;
+            font-family: $signika;
+            background: none;
+            padding: 0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-bottom: 1px solid;
+            outline: none;
+        }
+        button {
+            height: 35px;
+            width: 170px;
+            margin: 25px 10px;
+            font-size: 15px;
+            cursor: pointer;
+            color: $white;
+            border-radius: 30px;
+            outline: none;
+            border: solid 2px $royalblue;
+            background-color: $white;
+        }
+        button:last-child {
+            color: $royalblue;
+        }
+        button:first-child {
+            background-color: $royalblue;
+        }
+        button:hover {
+            background-color: $navy;
+            color: $white;
+        }
+    }
+}
+
+
+
+
+

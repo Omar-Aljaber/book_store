@@ -10,24 +10,27 @@ import scince from "../style/imgs/scince.jpg";
 import Footer from "../components/Footer";
 import BooksList from "../components/BooksList";
 import StayWithUs from "../components/StayWithUs";
+import homeBooks from "../data/homeBooks.json";
 import API from "../service/API";
-// import data from "../data/homeBooks.json";
 
 import { 
     BUTTONS_TITLE, 
     CATEGORY,
     TITLES 
 } from "../constants/Language_de";
+import Message from "../components/Message";
 
 export default function Home() {
 
     const history = useHistory();
-    const [ data, setData ] = useState();
+    const [ data, setData ] = useState([homeBooks]);
+    const [message, setMessage] = useState("");
+    const [messageType, setMessageType] = useState("");
 
-    useEffect(async () => {
-        const response = await API.getBooks();
-        setData(response.data);
-    }, []);
+    // useEffect(async () => {
+    //     const response = await API.getBooks();
+    //     setData(response.data);
+    // }, []);
 
     const seeAllCategory = (e) => {
         e.preventDefault();
@@ -111,12 +114,13 @@ export default function Home() {
     return (
         <main className="home-view">
             <Header />
+            {message && <Message type={messageType} text={message} setMessage={setMessage} />}
             <Slideshow />
             <div className="wrapper">
                 <div className="new-title">{TITLES.NEW_BOOKS}</div>
-                {<BooksList data={data && data} title="home"/>}
+                {<BooksList data={data && data} title="home" setMessage={setMessage} setMessageType={setMessageType} />}
             </div>
-            <StayWithUs />
+            <StayWithUs setMessage={setMessage} setMessageType={setMessageType} />
             <section className="category-part">
                 {categoryPart()}
             </section>

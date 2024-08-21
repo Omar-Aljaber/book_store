@@ -90,4 +90,17 @@ export const BOOKS_SITE = {
   BY_PUBLISHER: "Shop by Publisher",
 };
 
+export const MESSAGES = {
+  TYPE: {
+    CONFIRM: "confirm",
+    ERROR: "error",
+    INFO: "info",
+  },
+  TEXT: {
+    ADDED_TO_FAVIROTE: "Book successfully added to your Favirote List!",
+    ADDED_TO_CART: "Book successfully added to your Cart!",
+    SUBSCRIBE: "Thank you for subscribing to our newsletter",
+  }
+};
+
 

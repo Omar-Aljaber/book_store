@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import logo from "../style/imgs/logo.png";
-import cart from "../style/imgs/cart.png";
+import cart from "../style/imgs/default-cart.png";
 import user from "../style/imgs/user.svg";
 import favorite from "../style/imgs/favorite.svg";
 import whatsapp from "../style/imgs/icons/whatsapp.png";

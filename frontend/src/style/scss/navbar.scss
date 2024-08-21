@@ -28,7 +28,7 @@ nav {
         top: 65px;
         flex-wrap: wrap;
         // justify-content: start;
-        max-width: 563px;
+        max-width: 570px;
         max-height: 500px;
         padding: 5px;
         color: $black;
@@ -40,18 +40,19 @@ nav {
             display: flex;
             width: 180px;
             height: 85px;
-            margin: 1px;
+            margin: 2px;
             justify-content: center;
             align-items: center;
             font-family: $signika;
             font-size: 25px;
             color: $black;
+            background-color: $WhiteSmoke;
             padding: 15px;
             cursor: pointer;
         }
         .buttons:hover {
-            color: $royalblue;
-            background-color: $WhiteSmoke;
+            // color: $royalblue;
+            background-color: $silver;
         }
     }
 }

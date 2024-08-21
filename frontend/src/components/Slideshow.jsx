@@ -47,6 +47,7 @@ const images = [home_1, home_2, home_3];
           <img
             key={index}
             src={img}
+            // width={2000}
             className="slide"
             alt=""
           />

@@ -1,0 +1,40 @@
+@import "_color.scss";
+@import "_size.scss";
+@import "_font.scss";
+
+.message {
+    position: fixed;
+    text-align: center;
+    top: 135px;
+    right: 0px;
+    width: 400px;
+    min-height: 120px;
+    border-radius: 10px;
+    border: 1px solid $black;
+    z-index: 200;
+
+    .green {
+        background-color: $green;
+        border-radius: 10px;
+    }
+    .gray {
+        background-color: $gray;
+        border-radius: 10px;
+    }
+    .red {
+        background-color: $red;
+        border-radius: 10px;
+    }
+
+    .title {
+        height: 40px;
+        font-size: 25px;
+        font-weight: 700;
+        border-bottom: 1px solid $black;
+    }
+
+    .text {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+}

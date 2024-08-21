@@ -88,6 +88,7 @@
         background-color: rgba(0, 0, 0, 0.03);
     }
     .read-book > .wrapper {
+        position: absolute;
         display: flex;
         flex-direction: column;
         height: 600px;

@@ -5,18 +5,18 @@
 .slideshow {
   position: relative;
   top: 135px;
-  height: 580px;
+  height: 825px;
   // margin: 0 auto;
   overflow: hidden;
   width: 100%;
 }
 .slideshowSlider {
   white-space: nowrap;
-  transition: ease 2000ms;
+  transition: ease 3000ms;
 }
 .slide {
   display: inline-block;
-  height: 430px;
+  height: 50%;
   width: 100%;
 }
 

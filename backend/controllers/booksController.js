@@ -32,43 +32,24 @@ const upload = multer({storage: storage});
 // };
 
 /* POST - add book. */
-exports.create = upload.single('image'), (req, res, next) => {
-    console.log(req)
-    let description = {
-        content: req.body.description.content,
-        price: req.body.description.price,
-        discount: req.body.description.discount,
-        pagesCount: req.body.description.pagesCount,
-        height: req.body.description.height,
-        width: req.body.description.width,
-        typeOfCover: req.body.description.typeOfCover
-    };
-
-    if (!req.file) {
-        return res.status(400).send('No image uploaded');
-    }
-
+exports.create = (req, res, next) => {
     book.create({
-        image: {
-            filename: req.file.originalname,
-            path: req.file.path,
-        },
+        image: null,
         title: req.body.title,
-        author: req.body.author,
         publisher: req.body.publisher,
         category: req.body.category,
         dateOfPublish: req.body.dateOfPublish,
         availability: req.body.availability,
         review: req.body.review,
         view: req.body.view,
-        description: description
+        description: req.body.description,
     })
-        .then(book => {
-            res.json(book);
-        })
-        .catch(err => {
-            res.status(422).send(err);
-        });
+    .then(book => {
+        res.json(book);
+    })
+    .catch(err => {
+        res.status(422).send(err);
+    });
 };
 
 /* GET - list all books. */
@@ -95,24 +76,16 @@ exports.findeById = (req, res, next) => {
 
 /* PUT - update a book. */
 exports.update = (req, res, next) => {
-    let description = {
-        photo: req.body.photo,
-        content: req.body.content,
-        author: req.body.author,
-        publisher: req.body.publicher,
-        price: req.body.price,
-        pages_count: req.body.pages_count,
-        height: req.body.height,
-        width: req.body.width,
-        dateOfPublish: req.body.dateOfPublish,
-        typeOfCover: req.body.typeOfCover,
-        category: req.body.category
-    }
     let data = {
-        name: req.body.name,
-        type: req.body.type,
+        image: null,
+        title: req.body.title,
+        publisher: req.body.publisher,
+        category: req.body.category,
+        dateOfPublish: req.body.dateOfPublish,
         availability: req.body.availability,
-        description: description
+        review: req.body.review,
+        view: req.body.view,
+        description: req.body.description,
     }
     book.findOneAndUpdate(req.params.id, data)
         .then(updated => {

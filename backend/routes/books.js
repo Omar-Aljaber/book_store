@@ -3,15 +3,11 @@ const router = express.Router();
 const FormData = require('form-data');
 
 const controller = require('../controllers/booksController');
-const formData = new FormData();
-formData.append('image', image);
+// const formData = new FormData();
+// formData.append('image', image);
 
 /* POST - create book. */
-router.post('/', controller.create, formData, {
-    headers: {
-      'Content-Type': 'multipart/form-data',
-    },
-  });
+router.post('/', controller.create);
 
 /* GET - list all books. */
 router.get('/', controller.listAll);

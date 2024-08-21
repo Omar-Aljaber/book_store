@@ -2,6 +2,9 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ProductDescription = new Schema({
+    author: {
+        type: String,
+    },
     content: {
         type: String
     },
@@ -39,14 +42,7 @@ const ProductImage = new Schema({
 
 
 const ProductSchema = new Schema({
-    image: [
-        ProductImage
-    ],
     title: {
-        type: String,
-        required: true
-    },
-    author: {
         type: String,
         required: true
     },
@@ -72,9 +68,7 @@ const ProductSchema = new Schema({
     view: {
         type: Number,
     },
-    description: [
-        ProductDescription  
-    ],
+    description: ProductDescription,
     created_at: {
         type: Date,
         default: Date.now

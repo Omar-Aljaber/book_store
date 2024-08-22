@@ -5,9 +5,9 @@ import Footer from "../components/Footer";
 import BooksList from "../components/BooksList";
 import StayWithUs from "../components/StayWithUs";
 import { BOOKS_SITE } from "../constants/Language_de";
-import API from "../service/API";
 import allBooks from "../data/allBooks.json";
 import Message from "../components/Message";
+import API from "../service/API";
 
 export default function Books() {
     const history = useHistory();
@@ -16,8 +16,8 @@ export default function Books() {
     const [data, setData] = useState([allBooks]);
     const [categories, setCategories] = useState([]);
     const [publishers, setPublishers] = useState([]);
-    const [/*selectedCategory*/, setSelectedCategory] = useState(category);
-    const [/*selectedPublisher*/, setSelectedPublisher] = useState(publisher);
+    const [selectedCategory, setSelectedCategory] = useState(category);
+    const [selectedPublisher, setSelectedPublisher] = useState(publisher);
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState("");
 
@@ -36,11 +36,11 @@ export default function Books() {
         const fetchData = async () => {
             //get all books from database.
             const response = await API.getBooks();
-            if(category !== "all-books"){
+            if(category !== "all"){
                 const modifiedCategory = category.replace(/-/g, " ");
                 const booksfromselectedCategory = [...new Set(response.data.filter((book) => book.category === modifiedCategory))];
                 setData(booksfromselectedCategory);
-            } else if (publisher !== "all-books") {
+            } else if (publisher !== "all") {
                 const modifiedPublisher = publisher.replace(/-/g, " ");
                 const booksfromselectedPublisher = [...new Set(response.data.filter((book) => book.publisher === modifiedPublisher))];
                 setData(booksfromselectedPublisher);
@@ -61,21 +61,21 @@ export default function Books() {
 
     //get all books from the selected category.
     const onSelectedCategory = async (category) => {
-        const modifiedCategory = category.replace(/ /g, "-");
-        history.replace(`/books/category=${modifiedCategory}&publisher=all-books`);
         setSelectedCategory(category);
+        const modifiedCategory = category.replace(/ /g, "-");
+        history.replace(`/books/category=${modifiedCategory}&publisher=all`);
     };
     
-    //get all books from the selected publisher.
     const onSelectedPublisher = async (publisher) => {
         setSelectedPublisher(publisher);
         const modifiedPublisher = publisher.replace(/ /g, "-");
-        history.replace(`/books/category=all-books&publisher=${modifiedPublisher}`);
+        history.replace(`/books/category=all&publisher=${modifiedPublisher}`);
     };
 
-    //reset all books
-    const resetAllBooks = async () => {
-        history.replace(`/books/category=all-books&publisher=all-books`);
+    const resetFilter = async () => {
+        setSelectedCategory("all");
+        setSelectedPublisher("all");
+        history.replace(`/books/category=all&publisher=all`);
     };
 
     // the left side, which displays the categories and publishers.
@@ -84,7 +84,7 @@ export default function Books() {
             <div className="left-side">
                 <section>
                     <div className="shop-by">{BOOKS_SITE.BY_CATEGORY}</div>
-                    <button className="category" onClick={resetAllBooks}>All Categories</button>
+                    <button className="category" onClick={resetFilter}>All Categories</button>
                     {categories && categories.map((category, index) => (
                         <button 
                             key={index}
@@ -97,7 +97,7 @@ export default function Books() {
                 </section>
                 <section>
                     <div className="shop-by">{BOOKS_SITE.BY_PUBLISHER}</div>
-                    <button className="category" onClick={resetAllBooks}>All Publischers</button>
+                    <button className="category" onClick={resetFilter}>All Publischers</button>
                     {publishers && publishers.map((publisher, index) => (
                         <button 
                             key={index}
@@ -118,7 +118,14 @@ export default function Books() {
             {message && <Message type={messageType} text={message} setMessage={setMessage} />}
             <div className="books-part">
                 {leftSide()}
-                <BooksList data={data && data} title="books" setMessage={setMessage} setMessageType={setMessageType} />
+                <BooksList 
+                    data={data && data} 
+                    title="books" 
+                    selectedCategory={selectedCategory}
+                    selectedPublisher={selectedPublisher} 
+                    setMessage={setMessage} 
+                    setMessageType={setMessageType} 
+                />
             </div>
             <div className="under-part">
                 <StayWithUs setMessage={setMessage} setMessageType={setMessageType} />

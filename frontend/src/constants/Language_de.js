@@ -52,8 +52,11 @@ export const DESCRIPTION_PART = {
   TEXT: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
 }
 
+export const ALL_BOOKS = "All Books";
+
+export const ALL_PUBLISHERS = "All Publischers";
+
 export const CATEGORY = {
-  ALL_BOOKS: "All Books",
   HISTORY: "HISTORY",
   RELIGION: "RELIGION",
   ACADEMIC: "ACADEMIC",
@@ -74,7 +77,7 @@ export const BUTTONS_TITLE = {
   CANCLE: "CANCLE",
   SINGUP: "SING UP",
   SHOPPING: "Continue Shopping",
-  PAYMENT: "Continue to Payment",
+  PAYMENT: "Go to Payment",
   GO_TO_CART: "Go To Cart",
   ADD_TO_CART: "Add To Cart",
 

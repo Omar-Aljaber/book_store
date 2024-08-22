@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
-import { CATEGORY, NAVBAR } from "../constants/Language_de";
+import { ALL_BOOKS, ALL_PUBLISHERS, NAVBAR } from "../constants/Language_de";
 import data from "../data/allBooks.json";
 
 export default function Navbar(props) {
@@ -20,18 +20,18 @@ export default function Navbar(props) {
 
     const onSelectedCategory = (category) => {
         const modifiedCategory = category.replace(/ /g, "-");
-        history.replace(`/books/category=${modifiedCategory}&publisher=all-books`);
+        history.replace(`/books/category=${modifiedCategory}&publisher=all`);
     };
 
     const categoriesList = () => {
         return (
             <div className="options-list books">
                 <button 
-                    key={"all-books"}
+                    key={"all"}
                     className="buttons" 
-                    onClick={e => onSelectedCategory("all-books")}
+                    onClick={e => onSelectedCategory("all")}
                 >
-                    {CATEGORY.ALL_BOOKS}
+                    {ALL_BOOKS}
                 </button>
                 {categories && categories.map((category, index) => (
                     <button 
@@ -48,7 +48,7 @@ export default function Navbar(props) {
 
     const onSelectedPublisher = (publisher) => {
         const modifiedPublisher = publisher.replace(/ /g, "-");
-        history.replace(`/books/category=all-books&publisher=${modifiedPublisher}`);
+        history.replace(`/books/category=all&publisher=${modifiedPublisher}`);
     };
 
     const publishersList = () => {
@@ -57,9 +57,9 @@ export default function Navbar(props) {
                 <button 
                     key={"all-publisher"}
                     className="buttons"
-                    onClick={e => onSelectedPublisher("all-books")}
+                    onClick={e => onSelectedPublisher("all")}
                 >
-                    {CATEGORY.ALL_BOOKS}
+                    {ALL_PUBLISHERS}
                     </button>
                 {publishers && publishers.map((publisher, index) => (
                     <button 

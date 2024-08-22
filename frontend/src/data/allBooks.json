@@ -1,899 +1,916 @@
 {
     "books": [
         {
-            "photo": "...",
+            "image": null,
             "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
-            "author": "author name",
             "publisher": "Simon & Schuster",
             "category": "History",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 255,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "William Anderson",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 35,
-                "discount": 0,
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Tales of the Heart",
-            "author": "author name",
             "publisher": "HarperCollins",
             "category": "Religion",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 205,
+                "stars": 3
+            },
             "view": 25,
             "description": {
+                "author": "Olivia Brown",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 5,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Heartfelt Roses",
-            "author": "author name",
             "publisher": "Penguin Random House",
             "category": "Story",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 55,
+                "stars": 5
+            },
             "view": 25,
             "description": {
+                "author": "James Carter",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 25,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": 20,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Affinity Romance",
-            "author": "author name",
             "publisher": "romance",
             "category": "History",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 5,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Emma Davis",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 18,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Keep your setting in mind",
-            "author": "author name",
             "publisher": "Hachette Livre",
             "category": "Classic",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 305,
+                "stars": 5
+            },
             "view": 25,
             "description": {
+                "author": "Benjamin Evans",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": 15,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Don't forget the subtitle",
-            "author": "author name",
             "publisher": "Scholastic",
             "category": "Fantasy",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 101,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Isabella Foster",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 35,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "East of Eden by John Steinbeck",
-            "author": "author name",
             "publisher": "Pearson Education",
             "category": "Children",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 250,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Henry Graham",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 55,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": 50,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },{
-            "photo": "...",
+            "image": null,
             "title": "The House of Mirth",
-            "author": "author name",
             "publisher": "Wiley",
             "category": "Political",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 55,
+                "stars": 3
+            },
             "view": 25,
             "description": {
+                "author": "Sophia Harris",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 22,
-                "discount": 10,
-                "pagesCount": 150,
+                "new_price": 20,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "The Devil Wears Prada",
-            "author": "author name",
             "publisher": "Cengage Learning",
             "category": "Political",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 8,
+                "stars": 1
+            },
             "view": 25,
             "description": {
+                "author": "Alexander Johnson",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 36,
-                "discount": 10,
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "The Man Who Was Thursday",
-            "author": "author name",
             "publisher": "Bloomsbury",
             "category": "History",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 49,
+                "stars": 3
+            },
             "view": 25,
             "description": {
+                "author": "Mia King",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 8,
-                "discount": 10,
-                "pagesCount": 150,
+                "new_price": 6,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "The Devil Wears Prada",
-            "author": "author name",
             "publisher": "Ladybird Books",
             "category": "Religion",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 1500,
+                "stars": 5
+            },
             "view": 25,
             "description": {
+                "author": "Michael Lewis",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 9,
-                "discount": 10,
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "I Know Why The Caged Bird",
-            "author": "author name",
             "publisher": "Chronicle Books",
             "category": "Children",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 175,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Amelia Miller",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 11,
-                "discount": 10,
-                "pagesCount": 150,
+                "new_price": 10,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "The Sun Also Rises by Ernest Hemingway",
-            "author": "author name",
             "publisher": "Hogs Back Books",
             "category": "Cooking",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 305,
+                "stars": 3
+            },
             "view": 25,
             "description": {
+                "author": "Daniel Nelson",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 14,
-                "discount": 10,
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
-            "author": "author name",
             "publisher": "Arbordale Publishing",
             "category": "Cooking",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 700,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Charlotte Owens",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 31,
-                "discount": 10,
-                "pagesCount": 150,
+                "new_price": 25,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
-            "author": "author name",
             "publisher": "Immedium",
             "category": "Cooking",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 805,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Matthew Parker",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 29,
-                "discount": 10,
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
-            "author": "author name",
+            "author": "Harper Quinn",
             "publisher": "Kids Can Press",
             "category": "Arts",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 280,
+                "stars": 4
+            },
             "view": 25,
             "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 35,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": 33,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Tales of the Heart",
-            "author": "author name",
             "publisher": "Quirk Books",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 5,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Samuel Roberts",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 5,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Heartfelt Roses",
-            "author": "author name",
             "publisher": "ABDO Publishing",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 908,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Abigail Smith",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 25,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": 22,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Affinity Romance",
-            "author": "author name",
             "publisher": "ABDO Publishing",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 200,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Christopher Turner",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 18,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Keep your setting in mind",
-            "author": "author name",
             "publisher": "ABDO Publishing",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 3000,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Grace Walker",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
+            "image": null,
+            "title": "Affinity Romance",
             "publisher": "Quirk Books",
-            "category": "Sport",
+            "category": "History",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 5,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Emma Davis",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "price": 18,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Quirk Books",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
             "publisher": "Kids Can Press",
-            "category": "Sport",
+            "category": "Classic",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 305,
+                "stars": 5
+            },
             "view": 25,
             "description": {
+                "author": "Benjamin Evans",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": 15,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Kids Can Press",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
+            "image": null,
+            "title": "Don't forget the subtitle",
             "publisher": "Immedium",
-            "category": "Sport",
+            "category": "Fantasy",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 101,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Isabella Foster",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "price": 35,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Immedium",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
+            "image": null,
+            "title": "East of Eden by John Steinbeck",
             "publisher": "Arbordale Publishing",
-            "category": "Sport",
+            "category": "Children",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 250,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Henry Graham",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "price": 55,
+                "new_price": 50,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Arbordale Publishing",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
+        },{
+            "image": null,
+            "title": "The House of Mirth",
             "publisher": "Hogs Back Books",
-            "category": "Sport",
+            "category": "Political",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 55,
+                "stars": 3
+            },
             "view": 25,
             "description": {
+                "author": "Sophia Harris",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "price": 22,
+                "new_price": 20,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
+            "title": "The Devil Wears Prada",
+            "publisher": "Chronicle Books",
+            "category": "Political",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 8,
+                "stars": 1
+            },
+            "view": 25,
+            "description": {
+                "author": "Alexander Johnson",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 36,
+                "new_price": null,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "The Man Who Was Thursday",
+            "publisher": "Chronicle Books",
+            "category": "History",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 49,
+                "stars": 3
+            },
+            "view": 25,
+            "description": {
+                "author": "Mia King",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 8,
+                "new_price": 6,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "The Devil Wears Prada",
+            "publisher": "Ladybird Books",
+            "category": "Religion",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 1500,
+                "stars": 5
+            },
+            "view": 25,
+            "description": {
+                "author": "Michael Lewis",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 9,
+                "new_price": null,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "I Know Why The Caged Bird",
+            "publisher": "Ladybird Books",
+            "category": "Children",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 175,
+                "stars": 4
+            },
+            "view": 25,
+            "description": {
+                "author": "Amelia Miller",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 11,
+                "new_price": 10,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "The Sun Also Rises by Ernest Hemingway",
+            "publisher": "Wiley",
+            "category": "Cooking",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 305,
+                "stars": 3
+            },
+            "view": 25,
+            "description": {
+                "author": "Daniel Nelson",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 14,
+                "new_price": null,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
             "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
-            "author": "author name",
-            "publisher": "Hogs Back Books",
+            "publisher": "Wiley",
+            "category": "Cooking",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 700,
+                "stars": 4
+            },
+            "view": 25,
+            "description": {
+                "author": "Charlotte Owens",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 31,
+                "new_price": 25,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
+            "publisher": "Pearson Education",
+            "category": "Cooking",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 805,
+                "stars": 4
+            },
+            "view": 25,
+            "description": {
+                "author": "Matthew Parker",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 29,
+                "new_price": null,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
+            "author": "Harper Quinn",
+            "publisher": "Pearson Education",
             "category": "Arts",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 280,
+                "stars": 4
+            },
             "view": 25,
             "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 35,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": 33,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Tales of the Heart",
-            "author": "author name",
-            "publisher": "Chronicle Books",
+            "publisher": "Scholastic",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 5,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Samuel Roberts",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 5,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Heartfelt Roses",
-            "author": "author name",
-            "publisher": "Chronicle Books",
+            "publisher": "Scholastic",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 908,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Abigail Smith",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 25,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": 22,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Affinity Romance",
-            "author": "author name",
-            "publisher": "Ladybird Books",
+            "publisher": "Scholastic",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 200,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Christopher Turner",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 18,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Ladybird Books",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Wiley",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Wiley",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Pearson Education",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Pearson Education",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Scholastic",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Scholastic",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
-            "publisher": "Scholastic",
-            "category": "Sport",
-            "dateOfPublish": "01.01.2023",
-            "availability": true,
-            "review": 225,
-            "view": 25,
-            "description": {
-                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
-                "height": 25,
-                "width": 15,
-                "typeOfCover": "normal"
-            }
-        },
-        {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
             "publisher": "Simon & Schuster",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 3000,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Grace Walker",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
+            "image": null,
+            "title": "Heartfelt Roses",
             "publisher": "Simon & Schuster",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 908,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Abigail Smith",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "price": 25,
+                "new_price": 22,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
-            "title": "Keep your setting in mind",
-            "author": "author name",
+            "image": null,
+            "title": "Affinity Romance",
             "publisher": "HarperCollins",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 200,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Christopher Turner",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
-                "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "price": 18,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"
             }
         },
         {
-            "photo": "...",
+            "image": null,
             "title": "Keep your setting in mind",
-            "author": "author name",
             "publisher": "HarperCollins",
             "category": "Sport",
             "dateOfPublish": "01.01.2023",
             "availability": true,
-            "review": 225,
+            "review": {
+                "count": 3000,
+                "stars": 4
+            },
             "view": 25,
             "description": {
+                "author": "Grace Walker",
                 "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
                 "price": 19,
-                "discount": "",
-                "pagesCount": 150,
+                "new_price": null,
+                "pages_count": 150,
                 "height": 25,
                 "width": 15,
                 "typeOfCover": "normal"

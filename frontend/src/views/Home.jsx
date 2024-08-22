@@ -34,13 +34,13 @@ export default function Home() {
 
     const seeAllCategory = (e) => {
         e.preventDefault();
-        history.replace(`/books/category=all-books&publisher=all-books`);
+        history.replace(`/books/category=all&publisher=all`);
     };
 
     const displayCategory = (e) => {
         e.preventDefault();
         console.log(e.target.alt)
-        history.replace(`/books/category=${e.target.alt}&publisher=all-books`);
+        history.replace(`/books/category=${e.target.alt}&publisher=all`);
     };
 
     const categoryPart = (category) => {

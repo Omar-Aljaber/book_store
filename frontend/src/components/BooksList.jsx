@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import defaultFavorite from "../style/imgs/default-favorite.png";
 import favorite from "../style/imgs/favorite.png";
@@ -15,17 +15,45 @@ import {
 } from "../constants/Language_de";
 
 export default function BooksList(props) {
-    const { data } = props; 
+    const {data, selectedCategory, selectedPublisher} = props; 
     const history = useHistory();
+
+    const [books, setBooks] = useState(data && data[0].books);
     const [selectedBook, setSelectedBook] = useState();
     const [bookCount, setBookCount] = useState(1);
     const [bookHover, setBookHover] = useState(false);
     const [bookIndex, setBookIndex] = useState();
     const [showAboutBook, setShowAboutBook] = useState(false);
 
+    const categoryFilter = () => {
+        if(selectedCategory === "all" || selectedCategory === undefined){
+            setBooks(data[0].books);
+        } else {
+            const filterResult = data[0].books.filter((book) => book.category == selectedCategory);
+            setBooks(filterResult);
+        }
+    };
+  
+    const publisherFilter = () => {
+        if(selectedPublisher === "all" || selectedPublisher === undefined){
+            setBooks(data[0].books);
+        } else {
+            const filterResult = data[0].books.filter((book) => book.publisher == selectedPublisher);
+            setBooks(filterResult);
+        }
+    };
+
+    useEffect(() => {
+        categoryFilter();
+    }, [selectedCategory]);
+
+    useEffect(() => {
+        publisherFilter();
+    }, [selectedPublisher]);
+
     const seeAllBooks = (e) => {
         e.preventDefault();
-        history.replace(`/books/category=all-books&publisher=all-books`);
+        history.replace(`/books/category=all&publisher=all`);
     };
 
     const bookTitle = (title) => {
@@ -39,7 +67,7 @@ export default function BooksList(props) {
 
     const aboutBook = (e) => {
         setShowAboutBook(true);
-        const selectedBook = data[0].books.filter((book, index) => index == e.target.name);
+        const selectedBook = books.filter((book, index) => index == e.target.name);
         setSelectedBook(selectedBook);
         setBookHover(false);
     };
@@ -69,7 +97,7 @@ export default function BooksList(props) {
 
     const booksList = () => {
         return (
-            data && data[0].books.map((book, index) => {
+            books.map((book, index) => {
                 const bookImage = book.image != null ? book.image : defaultPhoto;
             return (
                 <div className="books" name={index} key={index} onMouseMove={(e) => onBookHover(e, index)} onMouseLeave={onBookLeave}>

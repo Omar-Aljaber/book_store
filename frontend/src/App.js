@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/home">
           <Home />
         </Route>
         <Route path="/books/category=:category&publisher=:publisher">

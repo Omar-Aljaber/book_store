@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import BooksList from "../components/BooksList";
@@ -7,17 +7,16 @@ import StayWithUs from "../components/StayWithUs";
 import { BOOKS_SITE } from "../constants/Language_de";
 import allBooks from "../data/allBooks.json";
 import Message from "../components/Message";
-import API from "../service/API";
+import helper from "../service/helper";
+// import API from "../service/API";
 
 export default function Books() {
     const history = useHistory();
     //get selected category und publisher
-    const { category, publisher } = useParams();
-    const [data, setData] = useState([allBooks]);
+
+    const [data, /*setData*/] = useState([allBooks]);
     const [categories, setCategories] = useState([]);
     const [publishers, setPublishers] = useState([]);
-    const [selectedCategory, setSelectedCategory] = useState(category);
-    const [selectedPublisher, setSelectedPublisher] = useState(publisher);
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState("");
 
@@ -61,20 +60,16 @@ export default function Books() {
 
     //get all books from the selected category.
     const onSelectedCategory = async (category) => {
-        setSelectedCategory(category);
-        const modifiedCategory = category.replace(/ /g, "-");
+        const modifiedCategory = helper.setHyphenBetweenWords(category);
         history.replace(`/books/category=${modifiedCategory}&publisher=all`);
     };
     
     const onSelectedPublisher = async (publisher) => {
-        setSelectedPublisher(publisher);
-        const modifiedPublisher = publisher.replace(/ /g, "-");
+        const modifiedPublisher = helper.setHyphenBetweenWords(publisher);
         history.replace(`/books/category=all&publisher=${modifiedPublisher}`);
     };
 
     const resetFilter = async () => {
-        setSelectedCategory("all");
-        setSelectedPublisher("all");
         history.replace(`/books/category=all&publisher=all`);
     };
 
@@ -120,9 +115,7 @@ export default function Books() {
                 {leftSide()}
                 <BooksList 
                     data={data && data} 
-                    title="books" 
-                    selectedCategory={selectedCategory}
-                    selectedPublisher={selectedPublisher} 
+                    title="books"
                     setMessage={setMessage} 
                     setMessageType={setMessageType} 
                 />

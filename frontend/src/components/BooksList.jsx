@@ -1,13 +1,14 @@
 import React, { useState, useEffect } from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useParams } from "react-router-dom";
 import defaultFavorite from "../style/imgs/default-favorite.png";
-import favorite from "../style/imgs/favorite.png";
+// import favorite from "../style/imgs/favorite.png";
 import bookIcon from "../style/imgs/book-solid.svg";
 import defaultPhoto from "../style/imgs/book.png";
-import cart from "../style/imgs/cart.png";
+// import cart from "../style/imgs/cart.png";
 import defaultCart from "../style/imgs/default-cart.png";
 import reviewStar from "../style/imgs/star.ico";
 import defaultStar from "../style/imgs/default-star.ico";
+import helper from "../service/helper";
 import { 
     IMGS_TITLE,
     BUTTONS_TITLE, 
@@ -15,41 +16,34 @@ import {
 } from "../constants/Language_de";
 
 export default function BooksList(props) {
-    const {data, selectedCategory, selectedPublisher} = props; 
+    const {data} = props; 
     const history = useHistory();
+    const { category, publisher } = useParams();
 
-    const [books, setBooks] = useState(data && data[0].books);
+    const [books, setBooks] = useState();
     const [selectedBook, setSelectedBook] = useState();
     const [bookCount, setBookCount] = useState(1);
     const [bookHover, setBookHover] = useState(false);
     const [bookIndex, setBookIndex] = useState();
     const [showAboutBook, setShowAboutBook] = useState(false);
 
-    const categoryFilter = () => {
-        if(selectedCategory === "all" || selectedCategory === undefined){
-            setBooks(data[0].books);
-        } else {
-            const filterResult = data[0].books.filter((book) => book.category == selectedCategory);
-            setBooks(filterResult);
-        }
-    };
+    useEffect(() => {
+        booksFilter();
+    }, [category, publisher]);
   
-    const publisherFilter = () => {
-        if(selectedPublisher === "all" || selectedPublisher === undefined){
+    const booksFilter = () => {
+        if((publisher === "all" && category === "all")|| history.location.pathname === "/home"){
             setBooks(data[0].books);
+        } else if (category !== "all") {
+            const modifiedCategory = helper.removeHyphenFormNames(category);
+            const filterResult = data[0].books.filter((book) => book.category === modifiedCategory);
+            setBooks(filterResult);
         } else {
-            const filterResult = data[0].books.filter((book) => book.publisher == selectedPublisher);
+            const modifiedPublisher = helper.removeHyphenFormNames(publisher);
+            const filterResult = data[0].books.filter((book) => book.publisher === modifiedPublisher);
             setBooks(filterResult);
         }
     };
-
-    useEffect(() => {
-        categoryFilter();
-    }, [selectedCategory]);
-
-    useEffect(() => {
-        publisherFilter();
-    }, [selectedPublisher]);
 
     const seeAllBooks = (e) => {
         e.preventDefault();
@@ -97,7 +91,7 @@ export default function BooksList(props) {
 
     const booksList = () => {
         return (
-            books.map((book, index) => {
+            books && books.map((book, index) => {
                 const bookImage = book.image != null ? book.image : defaultPhoto;
             return (
                 <div className="books" name={index} key={index} onMouseMove={(e) => onBookHover(e, index)} onMouseLeave={onBookLeave}>

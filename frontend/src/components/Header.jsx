@@ -13,7 +13,7 @@ import CartList from "./CartList";
 
 export default function Header() {
 
-    const [registered, setRegistered] = useState(false);
+    const [registered, /*setRegistered*/] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
     const [favoriteList, setFavoriteList] = useState(false);
     const [cartList, setCartList] = useState(false);

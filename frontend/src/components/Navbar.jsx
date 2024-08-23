@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import { ALL_BOOKS, ALL_PUBLISHERS, NAVBAR } from "../constants/Language_de";
 import data from "../data/allBooks.json";
+import helper from "../service/helper";
 
 export default function Navbar(props) {
 
@@ -18,8 +19,8 @@ export default function Navbar(props) {
         setPublishers(getAllPublisher);
     }, []);
 
-    const onSelectedCategory = (category) => {
-        const modifiedCategory = category.replace(/ /g, "-");
+    const onSelectCategory = (category) => {
+        const modifiedCategory =  helper.setHyphenBetweenWords(category);
         history.replace(`/books/category=${modifiedCategory}&publisher=all`);
     };
 
@@ -27,9 +28,9 @@ export default function Navbar(props) {
         return (
             <div className="options-list books">
                 <button 
-                    key={"all"}
+                    key={"all-categories"}
                     className="buttons" 
-                    onClick={e => onSelectedCategory("all")}
+                    onClick={e => onSelectCategory("all")}
                 >
                     {ALL_BOOKS}
                 </button>
@@ -37,7 +38,7 @@ export default function Navbar(props) {
                     <button 
                         key={index}
                         className="buttons"
-                        onClick={e => onSelectedCategory(e.target.innerText)}
+                        onClick={e => onSelectCategory(e.target.innerText)}
                     >
                         {category}
                     </button>
@@ -46,8 +47,8 @@ export default function Navbar(props) {
         )
     };
 
-    const onSelectedPublisher = (publisher) => {
-        const modifiedPublisher = publisher.replace(/ /g, "-");
+    const onSelectPublisher = (publisher) => {
+        const modifiedPublisher = helper.setHyphenBetweenWords(publisher);
         history.replace(`/books/category=all&publisher=${modifiedPublisher}`);
     };
 
@@ -57,7 +58,7 @@ export default function Navbar(props) {
                 <button 
                     key={"all-publisher"}
                     className="buttons"
-                    onClick={e => onSelectedPublisher("all")}
+                    onClick={e => onSelectPublisher("all")}
                 >
                     {ALL_PUBLISHERS}
                     </button>
@@ -65,7 +66,7 @@ export default function Navbar(props) {
                     <button 
                         key={index}
                         className="buttons"
-                        onClick={e => onSelectedPublisher(e.target.innerText)}    
+                        onClick={e => onSelectPublisher(e.target.innerText)}    
                     >
                         {publisher}
                     </button>
@@ -78,7 +79,7 @@ export default function Navbar(props) {
         <nav>
             <button className="home"
                 key={"home"}
-                onClick={() => {history.replace("/")}}
+                onClick={() => {history.replace("/home")}}
             >
                 {NAVBAR.HOME}
             </button>

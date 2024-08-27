@@ -29,10 +29,11 @@ export default function BooksList(props) {
 
     useEffect(() => {
         booksFilter();
+        window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     }, [category, publisher]);
   
     const booksFilter = () => {
-        if((publisher === "all" && category === "all")|| history.location.pathname === "/home"){
+        if((publisher === "all" && category === "all")|| history.location.pathname === "/"){
             setBooks(data[0].books);
         } else if (category !== "all") {
             const modifiedCategory = helper.removeHyphenFormNames(category);

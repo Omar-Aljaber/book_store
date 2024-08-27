@@ -79,7 +79,7 @@ export default function Navbar(props) {
         <nav>
             <button className="home"
                 key={"home"}
-                onClick={() => {history.replace("/home")}}
+                onClick={() => {history.replace("/")}}
             >
                 {NAVBAR.HOME}
             </button>

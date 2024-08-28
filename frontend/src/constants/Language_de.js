@@ -1,6 +1,7 @@
 export const HEADER = {
   SEARCH_PLACEHOLDER: "Search over 3 million books title",
   SEARCH: "Search",
+  RESET: "Reset",
   DELIVERY: "Quick Delivery",
   PAY_EASY: "Pay with Easy",
   BEST_DEAL: "Best Deal",

@@ -28,6 +28,10 @@ export default function BooksList(props) {
     const [showAboutBook, setShowAboutBook] = useState(false);
 
     useEffect(() => {
+        setBooks(data);
+    }, [data]);
+   
+    useEffect(() => {
         booksFilter();
         window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     }, [category, publisher]);
@@ -37,11 +41,11 @@ export default function BooksList(props) {
             setBooks(data[0].books);
         } else if (category !== "all") {
             const modifiedCategory = helper.removeHyphenFormNames(category);
-            const filterResult = data[0].books.filter((book) => book.category === modifiedCategory);
+            const filterResult = data && data[0].books.filter((book) => book.category === modifiedCategory);
             setBooks(filterResult);
         } else {
             const modifiedPublisher = helper.removeHyphenFormNames(publisher);
-            const filterResult = data[0].books.filter((book) => book.publisher === modifiedPublisher);
+            const filterResult = data && data[0].books.filter((book) => book.publisher === modifiedPublisher);
             setBooks(filterResult);
         }
     };

@@ -42,9 +42,14 @@
                 background: $white;
                 cursor: pointer;
             }
-            button:hover {
+            .enable:hover {
                 background: $royalblue;
                 color: $white;
+            }
+            .disabled{
+                color: gray;
+                border: solid 2px gray;
+                cursor: not-allowed;
             }
         }
         aside {

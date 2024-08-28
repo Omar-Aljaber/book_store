@@ -11,19 +11,20 @@ import Footer from "../components/Footer";
 import BooksList from "../components/BooksList";
 import StayWithUs from "../components/StayWithUs";
 import homeBooks from "../data/homeBooks.json";
+import Message from "../components/Message";
+import helper from "../service/helper";
 import API from "../service/API";
-
 import { 
     BUTTONS_TITLE, 
     CATEGORY,
     TITLES 
 } from "../constants/Language_de";
-import Message from "../components/Message";
+
 
 export default function Home() {
 
     const history = useHistory();
-    const [ data, setData ] = useState([homeBooks]);
+    const [data, setData] = useState([homeBooks]);
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState("");
 
@@ -41,6 +42,16 @@ export default function Home() {
         e.preventDefault();
         console.log(e.target.alt)
         history.replace(`/books/category=${e.target.alt}&publisher=all`);
+    };
+
+    const onSearch = (searchTerm) => {
+        helper.searchFunction(searchTerm, homeBooks, setData, setMessage, setMessageType);
+        window.scrollTo({top: 800, left: 0, behavior: "smooth"});
+    };
+    
+    const onResetSearch = () => {
+        helper.resetSearch(homeBooks, setData);
+        window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     };
 
     const categoryPart = (category) => {
@@ -113,7 +124,7 @@ export default function Home() {
    
     return (
         <main className="home-view">
-            <Header />
+            <Header search={onSearch} resetSearch={onResetSearch} />
             {message && <Message type={messageType} text={message} setMessage={setMessage} />}
             <Slideshow />
             <div className="wrapper">

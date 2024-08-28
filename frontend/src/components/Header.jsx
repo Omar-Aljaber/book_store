@@ -11,12 +11,12 @@ import FaviroteList from "./FaviroteList";
 import CartList from "./CartList";
 
 
-export default function Header() {
-
+export default function Header(props) {
     const [registered, /*setRegistered*/] = useState(false);
     const [showLogin, setShowLogin] = useState(false);
     const [favoriteList, setFavoriteList] = useState(false);
     const [cartList, setCartList] = useState(false);
+    const [searchTerm, setSearchTerm] = useState("");
 
     const login = () => {
         return (
@@ -35,7 +35,18 @@ export default function Header() {
             </div>
         );
     };
-    
+
+    const onSearch = (e) => {
+        e.preventDefault();
+        props.search(searchTerm);
+    };
+   
+    const onReset = (e) => {
+        e.preventDefault();
+        setSearchTerm("");
+        props.resetSearch();
+    };
+
     return (
         <div className="header">
             {showLogin && login()}
@@ -45,9 +56,10 @@ export default function Header() {
                 <div className="logo">
                     <img src={logo} width={150} alt="" />
                 </div>
-                <form>
-                    <input placeholder={HEADER.SEARCH_PLACEHOLDER}/>
-                    <button>{HEADER.SEARCH}</button>
+                <form >
+                    <button className={!searchTerm ? "disabled" : "enable"} onClick={(e) => onSearch(e)}>{HEADER.SEARCH}</button>
+                    <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} placeholder={HEADER.SEARCH_PLACEHOLDER}/>
+                    <button className={!searchTerm ? "disabled" : "enable"} onClick={(e) => onReset(e)}>{HEADER.RESET}</button>
                 </form>
                 <aside>
                     <div className="cart">

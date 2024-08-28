@@ -12,9 +12,8 @@ import helper from "../service/helper";
 
 export default function Books() {
     const history = useHistory();
-    //get selected category und publisher
-
-    const [data, /*setData*/] = useState([allBooks]);
+    
+    const [data, setData] = useState([allBooks]);
     const [categories, setCategories] = useState([]);
     const [publishers, setPublishers] = useState([]);
     const [message, setMessage] = useState("");
@@ -73,6 +72,14 @@ export default function Books() {
         history.replace(`/books/category=all&publisher=all`);
     };
 
+    const onSearch = (searchTerm) => {
+        helper.searchFunction(searchTerm, allBooks, setData, setMessage, setMessageType);
+    };
+    
+    const onResetSearch = () => {
+        helper.resetSearch(allBooks, setData);
+    };
+
     // the left side, which displays the categories and publishers.
     const leftSide = () => {
         return (
@@ -109,7 +116,7 @@ export default function Books() {
 
     return (
         <main className="books-view">
-            <Header />
+            <Header search={onSearch} resetSearch={onResetSearch} />
             {message && <Message type={messageType} text={message} setMessage={setMessage} />}
             <div className="books-part">
                 {leftSide()}

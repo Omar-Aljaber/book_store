@@ -124,7 +124,7 @@ export default function Home() {
    
     return (
         <main className="home-view">
-            <Header search={onSearch} resetSearch={onResetSearch} />
+            <Header search={onSearch} resetSearch={onResetSearch} messageType={setMessageType} message={setMessage} />
             {message && <Message type={messageType} text={message} setMessage={setMessage} />}
             <Slideshow />
             <div className="wrapper">

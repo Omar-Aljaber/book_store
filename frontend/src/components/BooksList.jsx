@@ -213,10 +213,12 @@ export default function BooksList(props) {
     // }
 
     return (
-        <section className="books-section">
-            {booksList()}
-            {/* <button className="see-all" onClick={(e) => {seeAllBooks(e)}} >{buttonTitle()}</button> */}
+        <div className="books-section">
+            <section>
+                {booksList()}
+                {/* <button className="see-all" onClick={(e) => {seeAllBooks(e)}} >{buttonTitle()}</button> */}
+            </section>
             {props.title && <button className="see-all" onClick={(e) => {seeAllBooks(e)}} >{BUTTONS_TITLE.ALL_BOOKS}</button>}
-        </section>
+        </div>
     )
 };

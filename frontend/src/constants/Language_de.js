@@ -99,11 +99,15 @@ export const MESSAGES = {
     CONFIRM: "confirm",
     ERROR: "error",
     INFO: "info",
+    NOT_FOUND: "notFound",
   },
   TEXT: {
     ADDED_TO_FAVIROTE: "Book successfully added to your Favirote List!",
     ADDED_TO_CART: "Book successfully added to your Cart!",
     SUBSCRIBE: "Thank you for subscribing to our newsletter",
+    REGISTERED: "Thank you, Your Register was successful!",
+    LOGINED: "Wellcome back, Your Login was successful!",
+    NOT_FOUND: "Sorry, There is no Book with this Title!",
   }
 };
 

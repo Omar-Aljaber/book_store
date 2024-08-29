@@ -12,7 +12,7 @@ import helper from "../service/helper";
 
 export default function Books() {
     const history = useHistory();
-    
+
     const [data, setData] = useState([allBooks]);
     const [categories, setCategories] = useState([]);
     const [publishers, setPublishers] = useState([]);
@@ -122,7 +122,7 @@ export default function Books() {
                 {leftSide()}
                 <BooksList 
                     data={data && data} 
-                    title="books"
+                    // title="books"
                     setMessage={setMessage} 
                     setMessageType={setMessageType} 
                 />

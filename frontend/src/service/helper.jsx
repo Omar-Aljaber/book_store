@@ -1,5 +1,7 @@
 /*************** HELPER ***************/
 
+import { MESSAGES } from "../constants/Language_de";
+
 class Helper {    
     
     setHyphenBetweenWords(name){
@@ -16,7 +18,6 @@ class Helper {
         if (!searchTerm) {
             const searchedBook = data.books.filter(book => book);
             setData(searchedBook);
-            return false;
         } else {
             const lowerCaseSearchTerm = searchTerm.toLowerCase();
             const searchedBook = data.books.filter(book => book.title.toLowerCase().includes(lowerCaseSearchTerm));
@@ -25,8 +26,8 @@ class Helper {
                 setData(searchedBook);
             }
             else {
-                setMessageType("notFound")
-                setMessage("Sorry, There is no Book with this Title!")
+                setMessageType(MESSAGES.TYPE.NOT_FOUND)
+                setMessage(MESSAGES.TEXT.NOT_FOUND)
             }
         };
     };

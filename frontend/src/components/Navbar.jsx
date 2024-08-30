@@ -20,6 +20,7 @@ export default function Navbar(props) {
     }, []);
 
     const onSelectCategory = (category) => {
+        setShowCategories(false);
         const modifiedCategory =  helper.setHyphenBetweenWords(category);
         history.replace(`/books/category=${modifiedCategory}&publisher=all`);
     };
@@ -48,6 +49,7 @@ export default function Navbar(props) {
     };
 
     const onSelectPublisher = (publisher) => {
+        setShowPublisher(false);
         const modifiedPublisher = helper.setHyphenBetweenWords(publisher);
         history.replace(`/books/category=all&publisher=${modifiedPublisher}`);
     };
@@ -75,6 +77,10 @@ export default function Navbar(props) {
         )
     };
 
+    const displayContactView = (publisher) => {
+        history.replace("/contact");
+    };
+
     return (
         <nav>
             <button className="home"
@@ -84,7 +90,7 @@ export default function Navbar(props) {
                 {NAVBAR.HOME}
             </button>
             <button className="books"
-                // key={"books"}
+                key={"books"}
                 onMouseOver={() => {setShowCategories(true)}}
                 onMouseLeave={() => {setShowCategories(false)}}
             >
@@ -92,7 +98,7 @@ export default function Navbar(props) {
                 {showCategories && categoriesList()}
             </button>
             <button className="publisher"
-                // key={"publisher"}
+                key={"publisher"}
                 onMouseOver={() => {setShowPublisher(true)}}
                 onMouseLeave={() => {setShowPublisher(false)}}
             >
@@ -100,8 +106,9 @@ export default function Navbar(props) {
                 {showPublisher && publishersList()}
             </button>
             <button 
-                // key={"content"}
+                key={"content"}
                 className="contact"
+                onClick={displayContactView}
             >
                 {NAVBAR.CONTACT}
             </button>

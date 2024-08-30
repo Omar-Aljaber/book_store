@@ -58,63 +58,65 @@ export default function Home() {
         return (
             <div>
                 <div className="title">{TITLES.CATEGORIES}</div>
-                <div className="right-part">
-                    <div>
-                        <h3>{CATEGORY.HISTORY}</h3>
-                        <img 
-                            src={historyImg} 
-                            className="" 
-                            width={530} 
-                            alt="History" 
-                            title="History"
-                            onClick={e => displayCategory(e)} 
-                        />
+                <div className="imgs-part">
+                    <div className="uper-part">
+                        <div>
+                            <h3>{CATEGORY.HISTORY}</h3>
+                            <img 
+                                src={historyImg} 
+                                className="history" 
+                                width={530} 
+                                alt="History" 
+                                title="History"
+                                onClick={e => displayCategory(e)} 
+                            />
+                        </div>
+                        <div>
+                            <h3>{CATEGORY.RELIGION}</h3>
+                            <img 
+                                src={religion} 
+                                className="religion" 
+                                width={530} 
+                                alt="Religion" 
+                                title="Religion"
+                                onClick={e => displayCategory(e)}
+                            />
+                        </div>
                     </div>
-                    <div>
-                        <h3>{CATEGORY.RELIGION}</h3>
-                        <img 
-                            src={religion} 
-                            className="religion" 
-                            width={530} 
-                            alt="Religion" 
-                            title="Religion"
-                            onClick={e => displayCategory(e)}
-                        />
-                    </div>
-                </div>
-                <div className="left-part">
-                    <div>
-                        <h3>{CATEGORY.ACADEMIC}</h3>
-                        <img 
-                            src={academic} 
-                            className="" 
-                            width={350} 
-                            alt="Academic" 
-                            title="Academic"
-                            onClick={e => displayCategory(e)} 
-                        />
-                    </div>
-                    <div>
-                        <h3>{CATEGORY.CHILDREN}</h3>
-                        <img 
-                            src={children} 
-                            className="children" 
-                            width={350} 
-                            alt="Children" 
-                            title="Children"
-                            onClick={e => displayCategory(e)}
-                        />
-                    </div>
-                    <div>
-                        <h3>{CATEGORY.SCINCE}</h3>
-                        <img 
-                            src={scince} 
-                            className="" 
-                            width={350} 
-                            alt="Scince" 
-                            title="Scince"
-                            onClick={e => displayCategory(e)}
-                        />
+                    <div className="under-part">
+                        <div>
+                            <h3>{CATEGORY.ACADEMIC}</h3>
+                            <img 
+                                src={academic} 
+                                className="" 
+                                width={350} 
+                                alt="Academic" 
+                                title="Academic"
+                                onClick={e => displayCategory(e)} 
+                            />
+                        </div>
+                        <div>
+                            <h3>{CATEGORY.CHILDREN}</h3>
+                            <img 
+                                src={children} 
+                                className="children" 
+                                width={350} 
+                                alt="Children" 
+                                title="Children"
+                                onClick={e => displayCategory(e)}
+                            />
+                        </div>
+                        <div>
+                            <h3>{CATEGORY.SCINCE}</h3>
+                            <img 
+                                src={scince} 
+                                className="" 
+                                width={350} 
+                                alt="Scince" 
+                                title="Scince"
+                                onClick={e => displayCategory(e)}
+                            />
+                        </div>
                     </div>
                 </div>
                 <button onClick={seeAllCategory}>{BUTTONS_TITLE.ALL_CATEGORIES}</button>

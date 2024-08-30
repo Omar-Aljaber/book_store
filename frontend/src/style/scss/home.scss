@@ -33,22 +33,106 @@
             margin-left: 40px;
             text-shadow: 0 0 3px #ff5df7;
         }
-        img {
-            cursor: pointer;
-        }
-        .right-part {
-            display: flex;
-            flex-direction: row;
-            .religion {
-                margin-left: 10px;
-            }          
-        }
-        .left-part {
-            display: flex;
-            flex-direction: row;
-            margin: 5px 0;
-            .children {
-                margin: 0 10px;
+        .imgs-part {
+            min-height: 60vh;
+            img {
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .uper-part {
+                display: flex;
+                flex-direction: row;
+                div > .religion {
+                    margin-left: 10px;
+                }
+                //make the img bigger on hover
+                @keyframes uper-part-animation {
+                    from {
+                        width: 530px;
+                    }
+                    30% {
+                        width: 540px;
+                    }
+                    to {
+                        width: 540px;
+                    }
+                }
+                @keyframes on-leave-uper-part-animation {
+                    from {
+                        width: 540px;
+                    }
+                    30% {
+                        width: 530px;
+                    }
+                    to {
+                        width: 530px;
+                    }
+                }
+                div > img:hover {
+                    animation-name: uper-part-animation;
+                    animation-duration: 2s;
+                }
+                div > img:not(:hover) {
+                    animation-name: on-leave-uper-part-animation;
+                    animation-duration: 2s;
+                }
+                //set shadow on img hover
+                div > img:hover {
+                    box-shadow: 0px 5px 20px rgba(0,0,0,0.4);
+                    transition: box-shadow 0.3s ease-in-out;
+                  }
+                div > img:not(:hover) {
+                    box-shadow: 0 0px 0px rgba(0,0,0,0.4);
+                    transition: box-shadow 0.3s ease-in-out;
+                }
+            }
+            .under-part {
+                display: flex;
+                flex-direction: row;
+                margin: 5px 0;
+                .children {
+                    margin: 0 10px;
+                }
+                //make the img bigger on hover
+                @keyframes under-part-animation {
+                    from {
+                        width: 350px;
+                    }
+                    30% {
+                        width: 360px;
+                    }
+                    to {
+                        width: 360px;
+                    }
+                }
+                @keyframes on-leave-under-part-animation {
+                    from {
+                        width: 360px;
+                    }
+                    30% {
+                        width: 350px;
+                    }
+                    to {
+                        width: 350px;
+                    }
+                }
+                div > img:hover {
+                    animation-name: under-part-animation;
+                    animation-duration: 2s;
+                }
+                div > img:not(:hover) {
+                    animation-name: on-leave-under-part-animation;
+                    animation-duration: 2s;
+                }
+                //set shadow on img hover
+                div > img:hover {
+                    box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+                    transition: box-shadow 0.3s ease-in-out;
+                  }
+                div > img:not(:hover) {
+                    box-shadow: 0 0px 0px rgba(0,0,0,0.4);
+                    transition: box-shadow 0.3s ease-in-out;
+                }
             }
         }
         button {

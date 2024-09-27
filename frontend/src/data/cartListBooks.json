@@ -1,0 +1,142 @@
+{
+    "books": [
+        {
+            "image": null,
+            "title": "Cloudy with a Chance of Meatballs by Judi Barrett",
+            "publisher": "publisher",
+            "category": "History",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 255,
+                "stars": 2
+            },
+            "view": 25,
+            "description": {
+                "author": "William Anderson",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 35,
+                "new_price": null,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "Tales of the Heart",
+            "publisher": "publisher",
+            "category": "Religion",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 205,
+                "stars": 3
+            },
+            "view": 25,
+            "description": {
+                "author": "Olivia Brown",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 5,
+                "new_price": null,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "Heartfelt Roses",
+            "publisher": "publisher",
+            "category": "Story",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 55,
+                "stars": 5
+            },
+            "view": 25,
+            "description": {
+                "author": "James Carter",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 25,
+                "new_price": 20,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "Affinity Romance",
+            "publisher": "romance",
+            "category": "History",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 5,
+                "stars": 4
+            },
+            "view": 25,
+            "description": {
+                "author": "Emma Davis",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 18,
+                "new_price": null,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "Keep your setting in mind",
+            "publisher": "publisher",
+            "category": "Classic",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 305,
+                "stars": 5
+            },
+            "view": 25,
+            "description": {
+                "author": "Benjamin Evans",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 19,
+                "new_price": 15,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        },
+        {
+            "image": null,
+            "title": "Don't forget the subtitle",
+            "publisher": "publisher",
+            "category": "Fantasy",
+            "dateOfPublish": "01.01.2023",
+            "availability": true,
+            "review": {
+                "count": 101,
+                "stars": 4
+            },
+            "view": 25,
+            "description": {
+                "author": "Isabella Foster",
+                "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo. Iusto provident facilis fuga quia . Iusto provident facilis fuga quia Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat, dolorem non in odit vel ab assumenda vitae officiis possimus, molestias velit, cupiditate recusandae voluptate explicabo.",
+                "price": 35,
+                "new_price": null,
+                "pages_count": 150,
+                "height": 25,
+                "width": 15,
+                "typeOfCover": "normal"
+            }
+        }
+    ]
+}

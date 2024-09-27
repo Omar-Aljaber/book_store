@@ -1,17 +1,19 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import logo from "../style/imgs/logo.png";
 import cart from "../style/imgs/default-cart.png";
 import user from "../style/imgs/user.svg";
 import favorite from "../style/imgs/favorite.svg";
 import whatsapp from "../style/imgs/icons/whatsapp.png";
 import Navbar from "./Navbar";
-import { HEADER, IMGS_TITLE, TITLES, BUTTONS_TITLE, MESSAGES } from "../constants/Language_de";
-import { WHATSAPP_URL } from "../constants/Constants";
 import FaviroteList from "./FaviroteList";
 import CartList from "./CartList";
+import { WHATSAPP_URL } from "../constants/Constants";
+import { HEADER, IMGS_TITLE, TITLES, BUTTONS_TITLE, MESSAGES } from "../constants/Language_de";
 
 
 export default function Header(props) {
+    const history = useHistory();
     const [register, setRegister] = useState(true);
     const [login, setLogin] = useState(false);
     const [showUserDialog, setShowUserDialog] = useState(false);
@@ -62,7 +64,7 @@ export default function Header(props) {
                         <button>{register ? TITLES.SINGUP : TITLES.LOGIN}</button>
                         <button onClick={() => {setShowUserDialog(false)}}>{BUTTONS_TITLE.CANCLE}</button>
                     </div>
-                    <a href="" onClick={(e) => {register ? onRegister(e) : onLogin(e)}}>{register ? BUTTONS_TITLE.register : BUTTONS_TITLE.login}</a>
+                    <a href="" onClick={(e) => {register ? onRegister(e) : onLogin(e)}}>{register ? BUTTONS_TITLE.login : BUTTONS_TITLE.register}</a>
                 </form>
             </div>
         );
@@ -79,6 +81,10 @@ export default function Header(props) {
         props.resetSearch();
     };
 
+    const onLogoClick = () => {
+        history.replace("/");
+    };
+
     return (
         <div className="header">
             {showUserDialog && userDialog()}
@@ -86,13 +92,15 @@ export default function Header(props) {
             {cartList && <CartList showCartList={setCartList}/>}
             <main>
                 <div className="logo">
-                    <img src={logo} width={150} alt="" />
+                    <img src={logo} width={150} onClick={onLogoClick} alt="" />
                 </div>
-                <form >
-                    <button className={!searchTerm ? "disabled" : "enable"} onClick={(e) => onSearch(e)}>{HEADER.SEARCH}</button>
-                    <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} placeholder={HEADER.SEARCH_PLACEHOLDER}/>
-                    <button className={!searchTerm ? "disabled" : "enable"} onClick={(e) => onReset(e)}>{HEADER.RESET}</button>
-                </form>
+                {props.search && 
+                    <form >
+                        <button className={!searchTerm ? "disabled" : "enable"} onClick={(e) => onSearch(e)}>{HEADER.SEARCH}</button>
+                        <input value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} placeholder={HEADER.SEARCH_PLACEHOLDER}/>
+                        <button className={!searchTerm ? "disabled" : "enable"} onClick={(e) => onReset(e)}>{HEADER.RESET}</button>
+                    </form>
+                }
                 <aside>
                     <div className="cart">
                         <img 

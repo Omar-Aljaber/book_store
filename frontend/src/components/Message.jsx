@@ -20,6 +20,10 @@ export default function Message(props) {
             color = "red";
             title = "Book not found!";
             break;
+        case "removed":
+            color = "red";
+            title = "Book removed!";
+            break;
         default:
             color = "green";
             title = "Successfully";

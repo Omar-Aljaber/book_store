@@ -86,7 +86,7 @@ export const BUTTONS_TITLE = {
 
 export const FOOTER = {
   TEXT: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered duskam alteration variations of passages",
-  ALL_RIGHTS: "All Rights Reserved by Book Store © 2023",
+  ALL_RIGHTS: "All Rights Reserved by Book Store © 2024",
 }
 
 export const BOOKS_SITE = {
@@ -99,10 +99,12 @@ export const MESSAGES = {
     CONFIRM: "confirm",
     ERROR: "error",
     INFO: "info",
+    REMOVED: "removed",
     NOT_FOUND: "notFound",
   },
   TEXT: {
     ADDED_TO_FAVIROTE: "Book successfully added to your Favirote List!",
+    DELETED_FROM_LIST: "Book successfully removed from your List!",
     ADDED_TO_CART: "Book successfully added to your Cart!",
     SUBSCRIBE: "Thank you for subscribing to our newsletter",
     REGISTERED: "Thank you, Your Register was successful!",

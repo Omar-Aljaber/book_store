@@ -37,6 +37,31 @@ class Helper {
         setData(searchedBook);
 
     };
+
+    reviewStars(count, reviewStar, defaultStar){
+        let stars = [];
+        for( let i = 0; i < count; i++){
+            stars.push(<img src={reviewStar} width={15} alt="" key={i} />)
+        }
+        if(stars.length < 5){
+            for( let i = stars.length; i < 5; i++){
+                stars.push(<img src={defaultStar} width={15} alt="" key={i} />)
+            }
+        }
+        return stars
+    }
+
+    addBook(bookCount, setBookCount){
+        let addCount = bookCount + 1;
+        setBookCount(addCount);
+    };
+    
+    reduceBook(bookCount, setBookCount){
+        if(bookCount > 1) {
+            let reduceCount = bookCount - 1;
+            setBookCount(reduceCount);
+        }
+    };
 }
 
 export default new Helper();

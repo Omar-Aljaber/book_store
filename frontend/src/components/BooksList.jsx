@@ -71,19 +71,6 @@ export default function BooksList(props) {
         setBookHover(false);
     };
 
-    const reviewStars = (count) => {
-        let stars = [];
-        for( let i = 0; i < count; i++){
-            stars.push(<img src={reviewStar} width={15} alt="" key={i} />)
-        }
-        if(stars.length < 5){
-            for( let i = stars.length; i < 5; i++){
-                stars.push(<img src={defaultStar} width={15} alt="" key={i} />)
-            }
-        }
-        return stars
-    }
-
     const addToFavirote = () => {
         props.setMessage(MESSAGES.TEXT.ADDED_TO_FAVIROTE);
         props.setMessageType(MESSAGES.TYPE.CONFIRM);
@@ -123,7 +110,7 @@ export default function BooksList(props) {
                         <img src={bookImage} className="bookPhoto" width={150} alt="BOOK" />
                         <div className="book-title">{bookTitle(book.title)}</div>
                         <div className="review">
-                            {reviewStars(book.review.stars)}
+                            {helper.reviewStars(book.review.stars, reviewStar, defaultStar)}
                             <div className="reviews">
                                 {book.review.count} reviews
                             </div>
@@ -155,18 +142,6 @@ export default function BooksList(props) {
         setBookCount(1);
     };
 
-    const addBook = () => {
-        let addCount = bookCount + 1;
-        setBookCount(addCount);
-    };
-    
-    const reduceBook = () => {
-        if(bookCount > 1) {
-            let reduceCount = bookCount - 1;
-            setBookCount(reduceCount);
-        }
-    };
-
     const aboutBookRender = () => {
         return (
             <div className="read-book">
@@ -182,15 +157,15 @@ export default function BooksList(props) {
                     <div className="down-part">
                         <div className="price">{selectedBook[0].description.price}$</div>
                         <div className="review"> 
-                            {reviewStars(selectedBook[0].review.stars)}
+                            {helper.reviewStars(selectedBook[0].review.stars, reviewStar, defaultStar)}
                             <div className="reviews">
                                 {selectedBook[0].review.count} reviews
                             </div>
                         </div>
                         <div className="count">
-                            <div className="minus" onClick={reduceBook}>-</div>
+                            <div className="minus" onClick={() => helper.reduceBook(bookCount, setBookCount)}>-</div>
                             <div className="number">{bookCount}</div>
-                            <div className="plus" onClick={addBook}>+</div>
+                            <div className="plus" onClick={() => helper.addBook(bookCount, setBookCount)}>+</div>
                         </div>
                         <div>
                             <button className="button" onClick={onGoShopping}>{BUTTONS_TITLE.SHOPPING}</button>

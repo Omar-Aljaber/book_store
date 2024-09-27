@@ -108,36 +108,24 @@
             }
         }
     }
-    .summe {
-        position: relative;
-        left: 500px;
-        margin: 10px 0 5px;
-        font-size: 24px;
-        color: $darkGreen;
+    div > button {
+        height: 40px;
+        width: 200px;
+        margin: 25px 20px;
+        font-size: 17px;
+        cursor: pointer;
+        color: $white;
+        border-radius: 30px;
+        outline: none;
+        border: solid 2px $royalblue;
+        background-color: $royalblue;
     }
-    .footer {
-        display: flex;
-        align-items: center;
-        font-family: $signika;
-        button {
-            height: 40px;
-            width: 200px;
-            margin: 0 20px 25px;
-            font-size: 17px;
-            cursor: pointer;
-            color: $white;
-            border-radius: 30px;
-            outline: none;
-            border: solid 2px $royalblue;
-            background-color: $royalblue;
-        }
-        .shopping {
-            background-color: $white;
-            color: $royalblue;
-        }
-        button:hover {
-            background-color: $navy;
-            color: $white;
-        }
-    }    
+    .shopping {
+        background-color: $white;
+        color: $royalblue;
+    }
+    button:hover {
+        background-color: $navy;
+        color: $white;
+    }
 }

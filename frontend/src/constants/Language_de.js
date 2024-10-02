@@ -24,6 +24,7 @@ export const TITLES = {
   SINGUP: "SING UP",
   MY_VAVIROTE: "MY FAVIROTE BOOKS",
   SHOPPING_LIST: "SHOPPING LIST",
+  CONTACT_US: "CONTACT US",
 }
 
 export const FAVIROTE_LIST = {
@@ -81,8 +82,15 @@ export const BUTTONS_TITLE = {
   PAYMENT: "Go to Payment",
   GO_TO_CART: "Go To Cart",
   ADD_TO_CART: "Add To Cart",
+  SUBMIT: "SUBMIT",
 
 }
+
+export const LABEL = {
+  NAME: "Name",
+  EMAIL: "Email",
+  MESSAGE: "Message",
+} 
 
 export const FOOTER = {
   TEXT: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered duskam alteration variations of passages",

@@ -3,7 +3,6 @@ import { useHistory, useParams } from "react-router-dom";
 import defaultFavorite from "../style/imgs/default-favorite.png";
 // import favorite from "../style/imgs/favorite.png";
 import bookIcon from "../style/imgs/book-solid.svg";
-import defaultPhoto from "../style/imgs/book.png";
 // import cart from "../style/imgs/cart.png";
 import defaultCart from "../style/imgs/default-cart.png";
 import reviewStar from "../style/imgs/star.ico";
@@ -84,7 +83,7 @@ export default function BooksList(props) {
     const booksList = () => {
         return (
             books && books.map((book, index) => {
-                const bookImage = book.image != null ? book.image : defaultPhoto;
+                const image_path = book.image != null ? `/books_image/${book.image}` : "/books_image/defaulte_image.png";
             return (
                 <div className="books" name={index} key={index} onMouseMove={(e) => onBookHover(e, index)} onMouseLeave={onBookLeave}>
                         {((!selectedBook && bookHover) && (index === bookIndex)) && (
@@ -107,7 +106,7 @@ export default function BooksList(props) {
                             </div>
                         )}
                         {showAboutBook && aboutBookRender()}
-                        <img src={bookImage} className="bookPhoto" width={150} alt="BOOK" />
+                        <img src={image_path} className="bookPhoto" width={150} alt="BOOK" />
                         <div className="book-title">{bookTitle(book.title)}</div>
                         <div className="review">
                             {helper.reviewStars(book.review.stars, reviewStar, defaultStar)}
@@ -147,7 +146,7 @@ export default function BooksList(props) {
             <div className="read-book">
                 <div className="wrapper">
                     <div className="upper-part">
-                        <img src={defaultPhoto} className="bookPhoto" alt="BOOK" />
+                        <img src="/books_image/defaulte_image.png" className="bookPhoto" alt="BOOK" />
                         <div className="about-book">
                             <div className="title">{selectedBook[0].title}</div>
                             <div className="author">{selectedBook[0].description.author}</div>

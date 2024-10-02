@@ -22,7 +22,7 @@ import {
 
 
 export default function Home() {
-
+    
     const history = useHistory();
     const [data, setData] = useState([homeBooks]);
     const [message, setMessage] = useState("");
@@ -131,7 +131,7 @@ export default function Home() {
             <Slideshow />
             <div className="wrapper">
                 <div className="new-title">{TITLES.NEW_BOOKS}</div>
-                {<BooksList data={data && data} title="home" setMessage={setMessage} setMessageType={setMessageType} />}
+                <BooksList data={data} title="home" setMessage={setMessage} setMessageType={setMessageType} />
             </div>
             <StayWithUs setMessage={setMessage} setMessageType={setMessageType} />
             <section className="category-part">
@@ -139,5 +139,5 @@ export default function Home() {
             </section>
             <Footer />
         </main>
-    )
-};
+    );
+}

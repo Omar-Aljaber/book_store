@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Delete from "../style/imgs/delete.ico";
 import cart from "../style/imgs/cart.png";
-import defaultPhoto from "../style/imgs/book.png";
 import reviewStar from "../style/imgs/star.ico";
 import defaultStar from "../style/imgs/default-star.ico";
 import helper from "../service/helper";
@@ -27,11 +26,11 @@ export default function FaviroteList(props) {
     const bookPart = (data, category) => {
         return (
             data.map((book, index) => { 
-                const bookPhoto = book.description.photo != null ? book.description.photo : defaultPhoto;
+                const image_path = book.image != null ? `/books_image/${book.image}` : "/books_image/defaulte_image.png";
                 return (
                     <div key={index} className="book-section">
                         <div className="book-part">
-                            <img src={bookPhoto} className="bookPhoto" width={80} alt="BOOK" />
+                            <img src={image_path} className="bookPhoto" width={80} alt="BOOK" />
                             <div className="title-review">
                                 <h4 className="book-title">{book.title}</h4>
                                 <div className="review"> 

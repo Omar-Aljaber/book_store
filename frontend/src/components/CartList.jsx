@@ -9,8 +9,15 @@ import data from "../data/cartListBooks.json";
 import Message from "./Message";
 import { TITLES, BUTTONS_TITLE, FAVIROTE_LIST, MESSAGES } from "../constants/Language_de";
 
+/**
+ * Creates a cart list
+ *
+ * @param props showCartList
+ * @returns window displaying the cart list
+ */
 export default function CartList(props) {
-    
+    const {showCartList} = props;
+
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState("");
     const [bookCounts, setBookCounts] = useState(data.books.map(() => 1));
@@ -73,12 +80,12 @@ export default function CartList(props) {
 
     const goToBayment = (e) => {
         e.preventDefault();
-        props.showCartList(false);
+        showCartList(false);
     };
   
     const continueShopping = (e) => {
         e.preventDefault();
-        props.showCartList(false);
+        showCartList(false);
     };
 
     return (
@@ -107,4 +114,4 @@ export default function CartList(props) {
             </div>
         </div>
     );
-}
+};

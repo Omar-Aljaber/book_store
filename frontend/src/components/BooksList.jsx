@@ -14,10 +14,17 @@ import {
     MESSAGES
 } from "../constants/Language_de";
 
+/**
+ * Function lists all available books
+ * 
+ * @param props data, setMessage, setMessageType, title
+ * @returns list of all available books
+ */
 export default function BooksList(props) {
-    const {data} = props; 
+    const {data, setMessage, setMessageType, title} = props;
+     
     const history = useHistory();
-    const { category, publisher } = useParams();
+    const {category, publisher} = useParams();
 
     const [books, setBooks] = useState();
     const [selectedBook, setSelectedBook] = useState();
@@ -35,6 +42,9 @@ export default function BooksList(props) {
         window.scrollTo({top: 0, left: 0, behavior: "smooth"});
     }, [category, publisher]);
   
+    /**
+     * Filter books by category or publisher
+     */
     const booksFilter = () => {
         if((publisher === "all" && category === "all")|| history.location.pathname === "/"){
             setBooks(data[0].books);
@@ -49,11 +59,22 @@ export default function BooksList(props) {
         }
     };
 
+    /**
+     * Switches to the books view and lists all available books
+     * 
+     * @param e 
+     */
     const seeAllBooks = (e) => {
         e.preventDefault();
         history.replace(`/books/category=all&publisher=all`);
     };
 
+    /**
+     * Trim the title if it exceeds 15 characters
+     * 
+     * @param title 
+     * @returns modified title, truncated if it exceeds 15 characters.
+     */
     const bookTitle = (title) => {
         const titleLength = title && title.length;
         if (titleLength > 22) {
@@ -63,6 +84,11 @@ export default function BooksList(props) {
         return title;
     };
 
+    /**
+     * Displays a window with detailed information about the selected book
+     * 
+     * @param e 
+     */
     const aboutBook = (e) => {
         setShowAboutBook(true);
         const selectedBook = books.filter((book, index) => index == e.target.name);
@@ -70,16 +96,27 @@ export default function BooksList(props) {
         setBookHover(false);
     };
 
+    /**
+     * Displays a confirmation message when a book is added to the favorites list 
+     */
     const addToFavirote = () => {
-        props.setMessage(MESSAGES.TEXT.ADDED_TO_FAVIROTE);
-        props.setMessageType(MESSAGES.TYPE.CONFIRM);
+        setMessage(MESSAGES.TEXT.ADDED_TO_FAVIROTE);
+        setMessageType(MESSAGES.TYPE.CONFIRM);
     };
 
+    /**
+     * Displays a confirmation message when a book is added to the cart list 
+     */
     const addToCart = () => {
-        props.setMessage(MESSAGES.TEXT.ADDED_TO_CART);
-        props.setMessageType(MESSAGES.TYPE.CONFIRM);
+        setMessage(MESSAGES.TEXT.ADDED_TO_CART);
+        setMessageType(MESSAGES.TYPE.CONFIRM);
     };
 
+    /**
+     * Creates an HTML book list
+     *
+     * @returns list of books with title, price, image, and review
+     */
     const booksList = () => {
         return (
             books && books.map((book, index) => {
@@ -141,6 +178,11 @@ export default function BooksList(props) {
         setBookCount(1);
     };
 
+    /**
+     * Displays the details of a selected book.
+     *
+     * @returns window with the book's details.
+     */
     const aboutBookRender = () => {
         return (
             <div className="read-book">
@@ -177,7 +219,7 @@ export default function BooksList(props) {
     }
 
     // const buttonTitle = () => {
-    //     switch(props.title) {
+    //     switch(title) {
     //         case "home":
     //           return BUTTONS_TITLE.ALL_BOOKS;
     //         case "books":
@@ -192,7 +234,7 @@ export default function BooksList(props) {
                 {booksList()}
                 {/* <button className="see-all" onClick={(e) => {seeAllBooks(e)}} >{buttonTitle()}</button> */}
             </section>
-            {props.title && <button className="see-all" onClick={(e) => {seeAllBooks(e)}} >{BUTTONS_TITLE.ALL_BOOKS}</button>}
+            {title && <button className="see-all" onClick={(e) => {seeAllBooks(e)}} >{BUTTONS_TITLE.ALL_BOOKS}</button>}
         </div>
     )
 };

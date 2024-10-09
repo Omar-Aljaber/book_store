@@ -8,7 +8,14 @@ import data from "../data/faviroteBooks.json";
 import Message from "./Message";
 import { TITLES, BUTTONS_TITLE, FAVIROTE_LIST, MESSAGES } from "../constants/Language_de";
 
+/**
+ * Creates a favorites list
+ *
+ * @param props Indicates whether to show the cart list
+ * @returns window displaying the favorites list
+ */
 export default function FaviroteList(props) {
+    const {showFavoriteList, showCartList} = props;
 
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState("");
@@ -52,13 +59,13 @@ export default function FaviroteList(props) {
 
     const goToCart = (e) => {
         e.preventDefault();
-        props.showFavoriteList(false);
-        props.showCartList(true);
+        showFavoriteList(false);
+        showCartList(true);
     };
   
     const continueShopping = (e) => {
         e.preventDefault();
-        props.showFavoriteList(false);
+        showFavoriteList(false);
     };
 
     return (
@@ -87,4 +94,4 @@ export default function FaviroteList(props) {
         </div>
             
     );
-}
+};

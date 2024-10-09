@@ -11,8 +11,14 @@ import CartList from "./CartList";
 import { WHATSAPP_URL } from "../constants/Constants";
 import { HEADER, IMGS_TITLE, TITLES, BUTTONS_TITLE, MESSAGES } from "../constants/Language_de";
 
-
+/**
+ * Header for all pages
+ *
+ * @param props message, messageType, search and resetSearch
+ * @returns section includes the logo, WhatsApp account, search field, user account, favorite and cart lists
+ */
 export default function Header(props) {
+    
     const history = useHistory();
     const [register, setRegister] = useState(true);
     const [login, setLogin] = useState(false);

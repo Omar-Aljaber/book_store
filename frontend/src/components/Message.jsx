@@ -1,6 +1,13 @@
 import React from "react";
 
+/**
+ * Creates a window that displays a message for the user
+ *
+ * @param props type, text, setMessage: function to set the message
+ * @returns user message window.
+ */
 export default function Message(props) {
+    
     let color;
     let title;
     switch(props.type) {

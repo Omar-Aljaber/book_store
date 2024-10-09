@@ -2,7 +2,11 @@ import React, { useState } from "react";
 import subscribePhoto from "../style/imgs/books.png";
 import { BUTTONS_TITLE, MESSAGES, SUBSCRIBE_PART } from "../constants/Language_de";
 
-
+/**
+ * Creates a section for newsletter subscriptions.
+ *
+ * @returns StayWithUs section.
+ */
 export default function StayWithUs(props){
 
     const [subscribeEmail, setSubscribeEmail] = useState();

@@ -20,10 +20,15 @@ import {
     TITLES 
 } from "../constants/Language_de";
 
-
+/**
+ * Home page.
+ *
+ * @returns section for books, a slideshow, a newsletter section, and a category section.
+ */
 export default function Home() {
-    
+
     const history = useHistory();
+
     const [data, setData] = useState([homeBooks]);
     const [message, setMessage] = useState("");
     const [messageType, setMessageType] = useState("");
@@ -140,4 +145,4 @@ export default function Home() {
             <Footer />
         </main>
     );
-}
+};

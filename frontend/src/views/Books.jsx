@@ -10,7 +10,13 @@ import Message from "../components/Message";
 import helper from "../service/helper";
 // import API from "../service/API";
 
+/**
+ * Creates a book page to display all available books.
+ *
+ * @returns book page.
+ */
 export default function Books() {
+    
     const history = useHistory();
 
     const [data, setData] = useState([allBooks]);
@@ -20,6 +26,9 @@ export default function Books() {
     const [messageType, setMessageType] = useState("");
 
 
+    /**
+     * Get all categories and publishers
+     */
     useEffect(() => {
         const getAllCategory = [...new Set(allBooks.books.map((book) => book.category))];
         const getAllPublisher = [...new Set(allBooks.books.map((book) => book.publisher))];
@@ -27,6 +36,9 @@ export default function Books() {
         setPublishers(getAllPublisher);
     }, []);
 
+    /**
+     * Get data from Backend 
+     */
     /* useEffect(() => {
         setSelectedCategory(category);
         setSelectedPublisher(publisher);
@@ -57,12 +69,21 @@ export default function Books() {
 
     }, [category, publisher]); */
 
-    //get all books from the selected category.
+    /**
+     * get all books from the selected category
+     * 
+     * @param category 
+     */
     const onSelectedCategory = async (category) => {
         const modifiedCategory = helper.setHyphenBetweenWords(category);
         history.replace(`/books/category=${modifiedCategory}&publisher=all`);
     };
     
+    /**
+     * get all books from the selected publisher
+     * 
+     * @param publisher 
+     */
     const onSelectedPublisher = async (publisher) => {
         const modifiedPublisher = helper.setHyphenBetweenWords(publisher);
         history.replace(`/books/category=all&publisher=${modifiedPublisher}`);
@@ -72,6 +93,11 @@ export default function Books() {
         history.replace(`/books/category=all&publisher=all`);
     };
 
+    /**
+     * Search function
+     * 
+     * @param searchTerm 
+     */
     const onSearch = (searchTerm) => {
         helper.searchFunction(searchTerm, allBooks, setData, setMessage, setMessageType);
     };
@@ -80,7 +106,11 @@ export default function Books() {
         helper.resetSearch(allBooks, setData);
     };
 
-    // the left side, which displays the categories and publishers.
+    /**
+     * left side, which displays the categories and publishers
+     * 
+     * @returns list includes all categories and publishers
+     */
     const leftSide = () => {
         return (
             <div className="left-side">

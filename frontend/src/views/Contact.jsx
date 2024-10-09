@@ -3,7 +3,11 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { BUTTONS_TITLE, LABEL, TITLES } from "../constants/Language_de";
 
-
+/**
+ * Creates a contact page.
+ *
+ * @returns contact page.
+ */
 export default function Contact() {
 
     useEffect(() => {
@@ -36,6 +40,4 @@ export default function Contact() {
             <Footer />
         </main>
     )
-}
-
-
+};

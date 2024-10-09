@@ -16,6 +16,11 @@ import {
     YOUTUBE_URL 
 } from "../constants/Constants";
 
+/**
+ * Footer for all pages
+ *
+ * @returns section containing the logo, social media accounts, and a brief description
+ */
 export default function Footer() {
 
     return (
@@ -45,4 +50,4 @@ export default function Footer() {
             <div className="all-rights">{FOOTER.ALL_RIGHTS}</div>
         </footer>
     )
-}
+};

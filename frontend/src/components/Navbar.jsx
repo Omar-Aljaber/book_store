@@ -4,7 +4,12 @@ import { ALL_BOOKS, ALL_PUBLISHERS, NAVBAR } from "../constants/Language_de";
 import data from "../data/allBooks.json";
 import helper from "../service/helper";
 
-export default function Navbar(props) {
+/**
+ * Creates a navigation section, including links for HOME, BOOKS, PUBLISHERS, and CONTACT
+ *
+ * @returns navigation section
+ */
+export default function Navbar() {
 
     const history = useHistory();
     const [showCategories, setShowCategories] = useState(false);
@@ -114,13 +119,4 @@ export default function Navbar(props) {
             </button>
         </nav>
     )
-}
-
-
-
-
-
-
-
-
-
+};

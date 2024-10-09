@@ -8,12 +8,19 @@ import secure_payment from "../style/imgs/secure_payment.svg";
 import best_deal from "../style/imgs/best_deal.png";
 import { HEADER } from "../constants/Language_de";
 
+/**
+ * Creates a slideshow for the bookstore photos on the homepage
+ *
+ * @returns slideshow component
+ */
 export default function Slideshow() {
-  const [index, setIndex] = useState(0);
-  const timeoutRef = useRef(null);
-const images = [home_1, home_2, home_3];
-  const delay = 4000;
 
+  const [index, setIndex] = useState(0);
+  
+  const images = [home_1, home_2, home_3];
+  const delay = 4000;
+  
+  const timeoutRef = useRef(null);
   const resetTimeout = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
